@@ -52,7 +52,7 @@ test('bowman check damage', () => {
   expect(char.health).toBe(92.5);
 });
 
-test('bowman check damage', () => {
+test('bowman check damage with negative health', () => {
   const char = new Bowman('Bowman');
   char.health = -1;
   char.damage(10);

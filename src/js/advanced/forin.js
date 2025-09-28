@@ -1,7 +1,7 @@
 export default function orderByProps(obj, order) {
   let result = [];
   order.forEach(name => {
-    if (obj.hasOwnProperty(name)) {
+    if (Object.hasOwn(obj, name)) {
       result.push({ key: name, value: obj[name] });
     }
   })
