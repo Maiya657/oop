@@ -1,8 +1,7 @@
-export default function destructuring(character) {
+export default function destructuring({ special = [] }) {
 	const newArrayExtendsAttack = [];
 
-	for (const attack of character.special) {
-		const { id, name, description, icon } = attack;
+	for (const { id, name, description, icon } of special) {
 		newArrayExtendsAttack.push({
 			id,
 			name,

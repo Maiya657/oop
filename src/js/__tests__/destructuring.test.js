@@ -37,3 +37,28 @@ test('destructuring test', () => {
       }
     ]	)
 })
+
+test('destructuring test without special', () => {
+  const character = {
+    name: 'Лучник',
+    type: 'Bowman',
+    health: 50,
+    level: 3,
+    attack: 40,
+    defence: 10
+  }
+  expect(destructuring(character)).toEqual([])
+})
+
+test('destructuring test with empty special', () => {
+  const character = {
+    name: 'Лучник',
+    type: 'Bowman',
+    health: 50,
+    level: 3,
+    attack: 40,
+    defence: 10,
+    special: []
+  }
+  expect(destructuring(character)).toEqual([])
+})
