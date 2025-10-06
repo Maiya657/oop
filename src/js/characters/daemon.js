@@ -1,6 +1,6 @@
-import { Character } from "./characters";
+import { MagicianCharacter } from "./magicionCharacter";
 
-export class Daemon extends Character {
+export class Daemon extends MagicianCharacter {
   constructor (name) {
     super(name);
     this.type = 'Daemon';
