@@ -7,7 +7,7 @@ test('magician check type', () => {
 
 test('magician check attack', () => {
   const char = new Magician ('Magician');
-  expect(char.attack).toBe(10);
+  expect(char.attack(1)).toBe(10);
 });
 
 test('magician check defence', () => {

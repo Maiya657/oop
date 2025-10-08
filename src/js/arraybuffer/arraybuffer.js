@@ -10,7 +10,7 @@ export default class ArrayBufferConverter {
     this.buffer = buffer;
   }
 
-  toString(encoding = 'utf-8') {
+  toString() {
     if (!this.buffer) {
       return '';
     }

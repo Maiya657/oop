@@ -4,10 +4,11 @@ export class MagicianCharacter extends Character {
   constructor(name) {
     super(name);
     this._stoned = false;
+    this._attack;
   }
   
   calculateAttack(distance) {
-    let attackPower = this.attack;
+    let attackPower = this._attack;
     
     // Уменьшение атаки с расстоянием
     if (distance > 1) {
@@ -31,6 +32,10 @@ export class MagicianCharacter extends Character {
 
   get stoned() {
     return this._stoned;
+  }
+
+  attack(distance) {
+    return this.calculateAttack(distance);
   }
 }
 

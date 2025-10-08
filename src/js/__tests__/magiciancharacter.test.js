@@ -6,7 +6,7 @@ test ('stoned check', () => {
   expect(char.stoned).toBe(true);
 })
 
-test ('stoned check wrong type ', () => {
+test ('stoned check wrong type', () => {
   const char = new MagicianCharacter('Magic1');
   expect(() => { char.stoned = 1 }).toThrow(Error);
 })

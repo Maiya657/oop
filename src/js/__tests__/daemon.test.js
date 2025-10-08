@@ -7,7 +7,7 @@ test('daemon check type', () => {
 
 test('daemon check attack', () => {
   const char = new Daemon ('Daemon');
-  expect(char.attack).toBe(10);
+  expect(char.attack(1)).toBe(10);
 });
 
 test('daemon check defence', () => {
